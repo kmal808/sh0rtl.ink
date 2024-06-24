@@ -1,15 +1,23 @@
 {
-  "name": "sh0rtl.ink",
-  "version": "1.0.50",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
-  },
-  "dependencies": {
-    "elysia": "latest"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "module": "src/index.js"
+	"name": "sh0rtl.ink",
+	"version": "1.0.50",
+	"main": "src/index.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "bun run --watch src/index.ts"
+	},
+	"dependencies": {
+		"@elysiajs/html": "^1.0.2",
+		"@elysiajs/static": "^1.0.3",
+		"@libsql/client": "^0.6.2",
+		"better-sqlite3": "^11.0.0",
+		"drizzle-orm": "^0.31.2",
+		"elysia": "latest",
+		"nanoid": "^5.0.7"
+	},
+	"devDependencies": {
+		"bun-types": "latest",
+		"drizzle-kit": "^0.22.7"
+	},
+	"module": "src/index.ts"
 }
