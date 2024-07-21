@@ -19,7 +19,6 @@ server.post(
 		if (!url) {
 			throw new Error('URL is required')
 		}
-
 		const urlId = nanoid(5)
 
 		await db.insert(shortener).values({ url, urlId })
